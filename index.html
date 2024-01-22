@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Assessment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="accessment-form w-full h-fit flex justify-center items-center">
+      <div class="accessment-content md:w-[90%] h-[90%]">
+        <header
+          class="w-full lg:h-[40vh] bg-[#363636] flex justify-center items-center"
+        >
+          <div
+            class="content w-[90%] md:w-[80%] lg:flex justify-between items-center max-sm:flex max-sm:flex-col max-sm:justify-center"
+          >
+            <img src="images/trial03.png" alt="" />
+            <h2
+              class="text-white text-[30px] font-bold max-sm:text-center max-sm:mb-8"
+            >
+              Classwork & Homework Submission Form
+            </h2>
+          </div>
+        </header>
+        <form class="w-full h-fit flex justify-center shadow-lg">
+          <div class="content w-[90%] md:w-[80%] h-full">
+            <div class="name">
+              <p class="text-[25px] mt-12 mb-2">
+                Name <small class="text-red-700">*</small>
+              </p>
+              <div class="names lg:flex justify-between">
+                <div class="first-name lg:w-[45%]">
+                  <input
+                    type="text"
+                    class="w-full h-[42px] bg-transparent border-2 border-gray-700 rounded-md px-2 font-bold"
+                  /><br />
+                  <label for="" class="text-[15px]">First Name</label>
+                </div>
+                <div class="second-name lg:w-[45%]">
+                  <input
+                    type="text"
+                    class="w-full h-[42px] bg-transparent border-2 border-gray-700 rounded-md px-2 font-bold"
+                  /><br />
+                  <label for="" class="text-[15px]">Second Name</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="Email&RegNo">
+              <div class="email lg:flex justify-between">
+                <div class="email lg:w-[45%]">
+                  <p class="text-[25px] mt-12 mb-2">
+                    Email <small class="text-red-700">*</small>
+                  </p>
+                  <input
+                    type="email"
+                    class="w-full h-[42px] bg-transparent border-2 border-gray-700 rounded-md px-2 font-bold"
+                  /><br />
+                  <label for="" class="text-[15px]">example@chris001.com</label>
+                </div>
+                <div class="RegNo lg:w-[45%]">
+                  <p class="text-[25px] mt-12 mb-2">
+                    Reg Number <small class="text-red-700">*</small>
+                  </p>
+                  <input
+                    type="number"
+                    class="w-full h-[42px] bg-transparent border-2 border-gray-700 rounded-md px-2 font-bold"
+                  /><br />
+                </div>
+              </div>
+            </div>
+            <div class="topic w-full flex justify-center my-4">
+              <div class="lg:w-[50%] w-full">
+                <p>Choose Topic:</p>
+                <select
+                  name="topic"
+                  id="topics"
+                  class="w-full h-[42px] bg-gray-700 text-white"
+                >
+                  <option value="html" class="lg:py-4">HTML</option>
+                  <option value="html" class="lg:py-4">CSS</option>
+                  <option value="html" class="lg:py-4">JAVASCRIPT</option>
+                  <option value="html" class="lg:py-4">TAILWIND</option>
+                  <option value="html" class="lg:py-4">BOOTSTRAP</option>
+                  <option value="html" class="lg:py-4">UI/UX</option>
+                </select>
+              </div>
+            </div>
+            <div class="assignmentLink w-full lg:flex justify-between mt-8">
+              <div class="lg:w-[40%]">
+                <p class="text-[25px]">Link to your assignment</p>
+              </div>
+              <div class="link lg:w-[55%]">
+                <input
+                  type="text"
+                  class="w-full h-[42px] bg-transparent border-2 border-gray-700 rounded-md"
+                /><br />
+                <label for="" class="text-[15px]"
+                  >PLease paste the URL here</label
+                >
+              </div>
+            </div>
+            <div class="file w-full">
+              <p class="text-[25px] mt-12 mb-2">
+                Upload your assignment here
+                <small class="text-red-700">*</small>
+              </p>
+              <input
+                type="file"
+                class="w-full border-2 border-gray-900 rounded-md h-[100px] flex justify-center"
+              />
+            </div>
+            <div class="comment w-full">
+              <p class="text-[25px] mt-12 mb-2">
+                Additional Comments
+                <small class="text-red-700">*</small>
+              </p>
+              <textarea
+                class="max-sm:p-2 w-full lg:p-4 text-[20px] shadow-lg rounded-lg"
+                name="comments"
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="If you need to resubmit an assignment or are turning it in late, please include an explanation here"
+              ></textarea>
+            </div>
+            <div class="submitBtn w-full flex justify-center my-8">
+              <button
+                class="max-sm:w-full w-[300px] h-[50px] bg-black text-white rounded-lg hover:bg-white hover:text-black font-bold shadow-lg"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

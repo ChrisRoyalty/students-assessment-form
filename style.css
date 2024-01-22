@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.accessment-form {
+  background: url(images/trial01.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.accessment-content {
+  background-color: rgba(0, 0, 0, 0.274);
+}
